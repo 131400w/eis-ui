@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "applications",
+  "info": {
+    "singularName": "application",
+    "pluralName": "applications",
+    "displayName": "application"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "application": {
+      "type": "string"
+    }
+  }
+}

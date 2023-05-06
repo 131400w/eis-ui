@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ym_actions",
+  "info": {
+    "singularName": "ym-action",
+    "pluralName": "ym-actions",
+    "displayName": "YmAction",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "ym_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ym-page.ym-page",
+      "inversedBy": "ym_actions"
+    },
+    "ym_role_permissions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ym-role-permission.ym-role-permission",
+      "mappedBy": "ym_action"
+    }
+  }
+}

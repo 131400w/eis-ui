@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ym_pages",
+  "info": {
+    "singularName": "ym-page",
+    "pluralName": "ym-pages",
+    "displayName": "YmPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "to": {
+      "type": "string"
+    },
+    "ym_actions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ym-action.ym-action",
+      "mappedBy": "ym_page"
+    },
+    "ym_role_permissions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ym-role-permission.ym-role-permission",
+      "mappedBy": "ym_page"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "parentId": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "index": {
+      "type": "integer"
+    },
+    "caidan": {
+      "type": "json"
+    },
+    "component": {
+      "type": "string"
+    }
+  }
+}

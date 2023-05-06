@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jb_people",
+  "info": {
+    "singularName": "jb-person",
+    "pluralName": "jb-people",
+    "displayName": "JbPerson",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "jb_person"
+    },
+    "jb_work_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::jb-work-user.jb-work-user",
+      "mappedBy": "jb_person"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "sex": {
+      "type": "enumeration",
+      "enum": [
+        "NAN",
+        "NV"
+      ]
+    },
+    "email": {
+      "type": "email"
+    },
+    "educational": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "education": {
+      "type": "string"
+    },
+    "jb_resumes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::jb-resume.jb-resume",
+      "mappedBy": "jb_person"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

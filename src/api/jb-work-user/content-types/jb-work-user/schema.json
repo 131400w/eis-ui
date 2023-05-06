@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jb_work_users",
+  "info": {
+    "singularName": "jb-work-user",
+    "pluralName": "jb-work-users",
+    "displayName": "JbWorkUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jb_work": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::jb-work.jb-work",
+      "inversedBy": "jb_work_users"
+    },
+    "jb_person": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::jb-person.jb-person",
+      "inversedBy": "jb_work_users"
+    },
+    "isheshi": {
+      "type": "enumeration",
+      "enum": [
+        "YES",
+        "NO"
+      ]
+    },
+    "ismianshi": {
+      "type": "enumeration",
+      "enum": [
+        "YES",
+        "NO"
+      ]
+    },
+    "isyimianshi": {
+      "type": "enumeration",
+      "enum": [
+        "YES",
+        "NO"
+      ]
+    },
+    "ishege": {
+      "type": "enumeration",
+      "enum": [
+        "YES",
+        "NO"
+      ]
+    },
+    "jb_resumes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::jb-resume.jb-resume",
+      "inversedBy": "jb_work_users"
+    }
+  }
+}

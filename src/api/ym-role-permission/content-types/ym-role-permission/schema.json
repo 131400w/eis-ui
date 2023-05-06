@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ym_role_permissions",
+  "info": {
+    "singularName": "ym-role-permission",
+    "pluralName": "ym-role-permissions",
+    "displayName": "YmRolePermission",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "roleName": {
+      "type": "enumeration",
+      "enum": [
+        "Authenticated",
+        "Public",
+        "Productor",
+        "Order",
+        "Login",
+        "FactoryAdmin"
+      ]
+    },
+    "ym_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ym-page.ym-page",
+      "inversedBy": "ym_role_permissions"
+    },
+    "ym_action": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ym-action.ym-action",
+      "inversedBy": "ym_role_permissions"
+    }
+  }
+}

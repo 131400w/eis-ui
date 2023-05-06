@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ym_factories",
+  "info": {
+    "singularName": "ym-factory",
+    "pluralName": "ym-factories",
+    "displayName": "ymFactory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string"
+    },
+    "billCode": {
+      "type": "string"
+    },
+    "billLicense": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "statue": {
+      "type": "enumeration",
+      "enum": [
+        "create",
+        "checked",
+        "invalidate"
+      ]
+    },
+    "licensePicId": {
+      "type": "integer"
+    },
+    "authorization": {
+      "type": "integer"
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "ym_factory"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

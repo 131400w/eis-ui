@@ -1,0 +1,33 @@
+{
+    "kind": "collectionType",
+    "collectionName": "jb_talents",
+    "info": {
+        "singularName": "jb-talent",
+        "pluralName": "jb-talents",
+        "displayName": "JbTalent"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "salary": {
+            "type": "float"
+        },
+        "position": {
+            "type": "string"
+        },
+        "experience": {
+            "type": "string"
+        },
+        "learn": {
+            "type": "string"
+        },
+        "more": {
+            "type": "richtext"
+        }
+    }
+}

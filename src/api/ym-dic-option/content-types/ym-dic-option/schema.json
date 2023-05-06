@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ym_dic_options",
+  "info": {
+    "singularName": "ym-dic-option",
+    "pluralName": "ym-dic-options",
+    "displayName": "ymDicOption",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "sort": {
+      "default": 0,
+      "type": "integer"
+    },
+    "statue": {
+      "type": "enumeration",
+      "enum": [
+        "enable",
+        "disable"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "dataType": {
+      "type": "enumeration",
+      "enum": [
+        "string",
+        "number"
+      ]
+    }
+  }
+}

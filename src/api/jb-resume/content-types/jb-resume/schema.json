@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jb_resumes",
+  "info": {
+    "singularName": "jb-resume",
+    "pluralName": "jb-resumes",
+    "displayName": "JbResume",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "sex": {
+      "type": "enumeration",
+      "enum": [
+        "NAN",
+        "NV"
+      ]
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "huntingStatus": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "city": {
+      "type": "string"
+    },
+    "salary": {
+      "type": "float"
+    },
+    "huntingType": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "advantage": {
+      "type": "richtext"
+    },
+    "experienceJingli": {
+      "type": "json"
+    },
+    "education": {
+      "type": "json"
+    },
+    "experienceJingyan": {
+      "type": "json"
+    },
+    "jb_person": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::jb-person.jb-person",
+      "inversedBy": "jb_resumes"
+    },
+    "address": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "political": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "jb_work_users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::jb-work-user.jb-work-user",
+      "mappedBy": "jb_resumes"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "skill": {
+      "type": "json"
+    },
+    "time": {
+      "type": "string"
+    }
+  }
+}

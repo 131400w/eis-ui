@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sc_factories",
+  "info": {
+    "singularName": "sc-factory",
+    "pluralName": "sc-factories",
+    "displayName": "ScFactory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "nameJc": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "isCheck": {
+      "type": "string"
+    },
+    "introduce": {
+      "type": "richtext"
+    },
+    "environment": {
+      "type": "richtext"
+    },
+    "employee": {
+      "type": "richtext"
+    },
+    "product": {
+      "type": "richtext"
+    },
+    "information": {
+      "type": "richtext"
+    },
+    "address": {
+      "type": "string"
+    },
+    "gps": {
+      "type": "string"
+    },
+    "jb_works": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::jb-work.jb-work",
+      "mappedBy": "sc_factory"
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "sc_factory"
+    }
+  }
+}

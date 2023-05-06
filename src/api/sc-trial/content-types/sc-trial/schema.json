@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sc_trials",
+  "info": {
+    "singularName": "sc-trial",
+    "pluralName": "sc-trials",
+    "displayName": "ScTrial"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "company": {
+      "type": "string"
+    },
+    "product": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

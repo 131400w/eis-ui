@@ -1,0 +1,38 @@
+{
+  "name": "eisyum",
+  "private": true,
+  "version": "0.1.0",
+  "description": "���ϵ�����Ϣ��ҵ����",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-documentation": "^4.5.6",
+    "@strapi/plugin-i18n": "4.5.6",
+    "@strapi/plugin-users-permissions": "4.5.6",
+    "@strapi/strapi": "4.5.6",
+    "bookshelf": "^1.2.0",
+    "cors": "^2.8.5",
+    "mysql": "2.18.1",
+    "qs": "^6.11.0",
+    "sha1": "^1.1.1",
+    "strapi-plugin-entity-relationship-chart": "^4.1.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "7f736346-e3a4-4c16-a7a9-254ed2b19ae0"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/request": "^2.48.8"
+  }
+}

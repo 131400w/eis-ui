@@ -1,0 +1,27 @@
+{
+    "kind": "collectionType",
+    "collectionName": "sc_categories",
+    "info": {
+        "singularName": "sc-category",
+        "pluralName": "sc-categories",
+        "displayName": "ScCategory"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "code": {
+            "type": "string"
+        },
+        "path": {
+            "type": "string"
+        },
+        "layer": {
+            "type": "integer"
+        }
+    }
+}

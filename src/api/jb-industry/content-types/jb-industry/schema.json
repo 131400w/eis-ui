@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jb_industries",
+  "info": {
+    "singularName": "jb-industry",
+    "pluralName": "jb-industries",
+    "displayName": "JbIndustry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "parentId": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "INDUSTRY",
+        "POSITION"
+      ]
+    },
+    "level": {
+      "type": "integer"
+    }
+  }
+}

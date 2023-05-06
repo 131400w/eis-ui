@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jb_works",
+  "info": {
+    "singularName": "jb-work",
+    "pluralName": "jb-works",
+    "displayName": "JbWork",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "learn": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "welfare": {
+      "type": "string"
+    },
+    "sc_factory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sc-factory.sc-factory",
+      "inversedBy": "jb_works"
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "jb_works"
+    },
+    "details": {
+      "type": "richtext"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "B",
+        "O",
+        "C"
+      ]
+    },
+    "jb_work_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::jb-work-user.jb-work-user",
+      "mappedBy": "jb_work"
+    },
+    "salaryMax": {
+      "type": "integer"
+    },
+    "salaryMin": {
+      "type": "integer"
+    }
+  }
+}

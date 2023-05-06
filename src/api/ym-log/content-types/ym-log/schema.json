@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ym_logs",
+  "info": {
+    "singularName": "ym-log",
+    "pluralName": "ym-logs",
+    "displayName": "YmLog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titile": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "yuanContext": {
+      "type": "richtext"
+    },
+    "xinContext": {
+      "type": "richtext"
+    },
+    "operator": {
+      "type": "string"
+    },
+    "time": {
+      "type": "datetime"
+    },
+    "operatorId": {
+      "type": "integer"
+    }
+  }
+}

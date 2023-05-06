@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ym_news",
+  "info": {
+    "singularName": "ym-new",
+    "pluralName": "ym-news",
+    "displayName": "YmNew",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "context": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "imageTitle": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}
